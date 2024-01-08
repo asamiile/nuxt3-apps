@@ -47,8 +47,8 @@ const restLists = () => {
       <div class="col-xs-11 col-md-4 q-gutter-y-lg">
         <q-card flat class="text-white bg-dark">
           <q-card-section style="min-height: 300px;">
-            <ul>
-              <li v-for="(name, index) in names" :key="index">
+            <ul class="list-index q-pl-md">
+              <li v-for="(name, index) in names" :key="index" class="list-index-item text-weight-bold">
                 {{ index + 1 }}：{{ name }}
               </li>
             </ul>
@@ -67,5 +67,17 @@ const restLists = () => {
     font-size: 2.5rem;
     line-height: 1;
   }
+}
+
+.list-index {
+  list-style: none;
+}
+
+.list-index-item {
+  font-size: 1.25rem;
+}
+
+.list-index-item:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 </style>
