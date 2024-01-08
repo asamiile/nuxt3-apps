@@ -10,17 +10,17 @@ export default defineNuxtConfig({
     config: {
       // Theme
       brand: {
-        primary: '#192230',
-        // secondary: '#ffffffe6',
-        // accent: '#ccb97e',
+        primary: '#1d2226',
+        secondary: '#ffffffe6',
+        accent: '#ccb97e',
 
-        dark: '#333F44',
+        dark: '#1d2226cc',
         // 'dark-page': '#121212',
 
-        // positive: '#f18d5f',
-        // negative: '#C10015',
-        // info: '#31CCEC',
-        // warning: '#F2C037'
+        positive: '#f18d5f',
+        negative: '#C10015',
+        info: '#31CCEC',
+        warning: '#F2C037'
       }
     },
   },

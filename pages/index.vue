@@ -35,10 +35,12 @@ const restLists = () => {
 
     <div class="row q-gutter-x-lg justify-center">
       <div class="col-xs-11 col-md-4 q-gutter-y-lg">
-        <q-input v-model="names[index]" v-for="(name, index) in names" :key="index" standout filled label="Name" />
-        <button @click="addName">Add List</button>
-        <button @click="shuffleLists">Shuffle The Lists</button>
-        <button @click="restLists">Reset Lists</button>
+        <q-input v-model="names[index]" v-for="(name, index) in names" :key="index" filled label="Enter text here." />
+        <div class="q-gutter-md q-mb-xl">
+          <q-btn @click="shuffleLists" label="Shuffle" color="positive" rounded/>
+          <q-btn @click="addName" label="Add List" color="dark" rounded/>
+          <q-btn @click="restLists" label="Reset Lists" color="dark" rounded/>
+        </div>
       </div>
 
       <div class="col-xs-11 col-md-4 q-gutter-y-lg">
