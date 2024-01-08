@@ -24,7 +24,7 @@ useHead({
     },
     {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap',
+      href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
       crossorigin: ''
     },
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -33,7 +33,4 @@ useHead({
 </script>
 
 <style scoped>
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-}
 </style>
