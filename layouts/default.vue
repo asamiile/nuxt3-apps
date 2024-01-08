@@ -15,7 +15,7 @@
     </q-page-container>
 
     <!-- Footer -->
-    <!-- <Footer /> -->
+    <Footer />
 
   </q-layout>
 </template>

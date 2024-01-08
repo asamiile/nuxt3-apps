@@ -61,7 +61,7 @@ const restLists = () => {
 
 <style scoped>
 .page-title {
-  @media (max-width: 599.99px) {
+  @media (width < 600px) {
     font-size: 2.5rem;
   }
 }

@@ -5,6 +5,11 @@ export default defineNuxtConfig({
     'nuxt-quasar-ui'
   ],
 
+  css: [
+    '@quasar/extras/fontawesome-v6/fontawesome-v6.css',
+    // '~/assets/css/main.css',
+  ],
+
   // https://github.com/Maiquu/nuxt-quasar#extrasanimations
   quasar: {
     config: {
