@@ -31,7 +31,8 @@ const restLists = () => {
 
 <template>
   <section>
-    <h2 class="page-title text-center text-weight-bold">Shaffle the List</h2>
+    <h2 class="page-title text-center text-weight-bold q-mb-sm">Shaffle the List</h2>
+    <p class="text-subtitle1 text-center q-mb-xl">Enter text and click "SHUFFLE" button.</p>
 
     <div class="row q-gutter-x-lg justify-center">
       <div class="col-xs-11 col-md-4 q-gutter-y-lg">
@@ -62,7 +63,9 @@ const restLists = () => {
 <style scoped>
 .page-title {
   @media (width < 600px) {
+    margin-bottom: 0;
     font-size: 2.5rem;
+    line-height: 1;
   }
 }
 </style>
