@@ -9,9 +9,14 @@ interface Name {
 
 const names = ref(['', '', '', '']);
 
-// Add the list
-const addName = () => {
+// Add list
+const addList = () => {
   names.value.push('');
+}
+
+// Remove List
+const removeList = () => {
+  names.value.pop();
 }
 
 // Shuffle the lists
@@ -22,7 +27,7 @@ const shuffleLists = () => {
   }
 }
 
-// Reset the lists
+// Reset lists
 const restLists = () => {
   names.value = ['', '', '', '']
 }
@@ -34,17 +39,41 @@ const restLists = () => {
     <h2 class="page-title text-center text-weight-bold q-mb-sm">Shaffle the List</h2>
     <p class="text-subtitle1 text-center q-mb-xl">Enter text and click "SHUFFLE" button.</p>
 
-    <div class="row q-gutter-x-lg justify-center">
-      <div class="col-xs-11 col-md-4 q-gutter-y-lg">
-        <q-input v-model="names[index]" v-for="(name, index) in names" :key="index" filled label="Enter text here." />
-        <div class="q-gutter-md q-mb-xl">
-          <q-btn @click="shuffleLists" label="Shuffle" color="positive" rounded/>
-          <q-btn @click="addName" label="Add List" color="dark" rounded/>
-          <q-btn @click="restLists" label="Reset Lists" color="dark" rounded/>
+    <div class="row q-gutter-x-lg justify-center q-gutter-y-lg">
+
+      <div class="q-mr-sm q-gutter-y-lg">
+        <!-- add & remove buttons -->
+        <div class="button-group items-start">
+          <q-btn @click="shuffleLists" icon="fas fa-shuffle" flat>
+            <q-tooltip class="bg-positive text-body2">
+              Shuffle
+            </q-tooltip> 
+          </q-btn>           
+          <q-btn @click="addList" icon="fas fa-plus" flat>
+            <q-tooltip class="bg-positive text-body2">
+              Add
+            </q-tooltip> 
+          </q-btn>           
+          <q-btn @click="removeList" icon="fas fa-minus" flat>
+            <q-tooltip class="bg-positive text-body2">
+              Remove
+            </q-tooltip> 
+          </q-btn>
+          <q-btn @click="restLists" icon="fas fa-rotate-left" flat>
+            <q-tooltip class="bg-positive text-body2">
+              Reset
+            </q-tooltip> 
+          </q-btn>           
         </div>
       </div>
 
       <div class="col-xs-11 col-md-4 q-gutter-y-lg">
+        <!-- input -->
+        <q-input v-model="names[index]" v-for="(name, index) in names" :key="index" filled label="Enter text here." />
+      </div>
+
+      <div class="col-xs-11 col-md-4 q-gutter-y-lg">
+        <!-- list -->
         <q-card flat class="text-white bg-dark">
           <q-card-section style="min-height: 300px;">
             <ul class="list-index q-pl-md">
@@ -66,6 +95,14 @@ const restLists = () => {
     margin-bottom: 0;
     font-size: 2.5rem;
     line-height: 1;
+  }
+}
+
+.button-group {
+  display: flex;
+  row-gap: 1.5rem;
+  @media (1024px <= width) {
+    flex-direction: column;
   }
 }
 
