@@ -44,6 +44,11 @@ const restLists = () => {
       <div class="q-mr-sm q-gutter-y-lg">
         <!-- add & remove buttons -->
         <div class="button-group items-start">
+          <q-btn @click="shuffleLists" icon="fas fa-shuffle" flat>
+            <q-tooltip class="bg-positive text-body2">
+              Shuffle
+            </q-tooltip> 
+          </q-btn>           
           <q-btn @click="addList" icon="fas fa-plus" flat>
             <q-tooltip class="bg-positive text-body2">
               Add
@@ -53,12 +58,7 @@ const restLists = () => {
             <q-tooltip class="bg-positive text-body2">
               Remove
             </q-tooltip> 
-          </q-btn>           
-          <q-btn @click="shuffleLists" icon="fas fa-shuffle" flat>
-            <q-tooltip class="bg-positive text-body2">
-              Shuffle
-            </q-tooltip> 
-          </q-btn>           
+          </q-btn>
           <q-btn @click="restLists" icon="fas fa-rotate-left" flat>
             <q-tooltip class="bg-positive text-body2">
               Reset
