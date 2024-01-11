@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Shaffle the List'
+  title: 'Shuffle the List'
 })
 
 interface Name {
@@ -36,8 +36,10 @@ const restLists = () => {
 
 <template>
   <section>
-    <h2 class="page-title text-center text-weight-bold q-mb-sm">Shaffle the List</h2>
-    <p class="text-subtitle1 text-center q-mb-xl">Enter text and click "SHUFFLE" button.</p>
+    <h2 class="page-title text-center text-weight-bold q-mb-sm">Shuffle the List</h2>
+    <p class="text-subtitle1 text-center q-mb-xl">
+      Enter text and click <q-icon name="fas fa-shuffle" /> button.
+    </p>
 
     <div class="row q-gutter-x-lg justify-center q-gutter-y-lg">
 
@@ -94,7 +96,7 @@ const restLists = () => {
   @media (width < 600px) {
     margin-bottom: 0;
     font-size: 2.5rem;
-    line-height: 1;
+    line-height: 1.25;
   }
 }
 
