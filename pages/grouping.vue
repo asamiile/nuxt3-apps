@@ -52,13 +52,7 @@ const restLists = () => {
 
     <div class="row q-gutter-x-lg justify-center q-gutter-y-lg">
 
-      <div class="row column items-center q-mr-sm q-gutter-y-lg">
-        <!-- input count -->
-        <q-input v-model="teamCount" type="number" min="2" style="max-width: 44px" class="team-count-input">
-            <q-tooltip class="bg-positive text-body2">
-              Team Count
-            </q-tooltip>
-        </q-input>
+      <div class="q-mr-sm q-gutter-y-lg">
 
         <!-- add & remove buttons -->
         <div class="button-group items-start">
@@ -96,6 +90,13 @@ const restLists = () => {
         <!-- list -->
         <q-card flat class="text-white bg-dark">
           <q-card-section style="min-height: 300px;">
+
+            <!-- input count -->
+            <div class="row team-count">
+              <span class="text-weight-bold q-ml-md">Team Count:</span>
+              <q-input v-model="teamCount" type="number" min="2" filled square color="secondary" style="max-width: 160px" class="team-count-input q-ml-md q-mt-sm" />
+            </div>
+
             <div class="team" v-for="(team, index) in teams" :key="index">
               <h3 class="list-title text-weight-bold q-ml-md">Team{{ index + 1 }}</h3>
               <ul>
@@ -120,11 +121,6 @@ const restLists = () => {
   }
 }
 
-/* input count */
-.team-count-input :deep(input) {
-  text-align: center;
-}
-
 /* button group */
 .button-group {
   display: flex;
@@ -132,6 +128,18 @@ const restLists = () => {
   @media (1024px <= width) {
     flex-direction: column;
   }
+}
+
+/* input count */
+.team-count {
+  align-items: baseline;
+  font-size: 1.25rem;
+}
+
+.team-count-input :deep(input) {
+  color: #ffffffe6;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 /* list */
