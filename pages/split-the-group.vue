@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Grouping'
+  title: 'Split the Group'
 })
 
 interface Name {
@@ -40,12 +40,14 @@ const removeList = () => {
 // Reset lists
 const restLists = () => {
   names.value = ['', '', '', '']
+  teams.value = Array.from({length: teamCount.value}, () => []);
+  teamCount.value = 2;
 }
 </script>
 
 <template>
   <section>
-    <h2 class="page-title text-center text-weight-bold q-mb-sm">Grouping</h2>
+    <h2 class="page-title text-center text-weight-bold q-mb-sm">Split the Group</h2>
     <p class="text-subtitle1 text-center q-mb-xl">
       Enter Name and click <q-icon name="fas fa-people-group" /> button.
     </p>
@@ -97,6 +99,8 @@ const restLists = () => {
               <q-input v-model="teamCount" type="number" min="2" filled square color="secondary" style="max-width: 160px" class="team-count-input q-ml-md q-mt-sm" />
             </div>
 
+            <hr class="list-divide q-mx-md q-my-md">
+
             <div class="team" v-for="(team, index) in teams" :key="index">
               <h3 class="list-title text-weight-bold q-ml-md">Team{{ index + 1 }}</h3>
               <ul>
@@ -140,6 +144,10 @@ const restLists = () => {
   color: #ffffffe6;
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+.list-divide {
+  border-color: #b6b6b6;
 }
 
 /* list */
