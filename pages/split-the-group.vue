@@ -40,8 +40,8 @@ const removeList = () => {
 // Reset lists
 const restLists = () => {
   names.value = ['', '', '', '']
-  teams.value = Array.from({length: teamCount.value}, () => []);
   teamCount.value = 2;
+  teams.value = Array.from({length: teamCount.value}, () => []);
 }
 </script>
 
