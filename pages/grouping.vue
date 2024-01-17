@@ -17,7 +17,7 @@ const randomizeTeams = () => {
   // Reset Grouping
   teams.value = Array.from({length: teamCount.value}, () => []);
 
-  let shuffledNames = names.value.sort(() => Math.random() - 0.5);
+  let shuffledNames = [...names.value].sort(() => Math.random() - 0.5);
   const teamSize = Math.ceil(shuffledNames.length / teamCount.value);
 
   // Group by number of teams
