@@ -20,12 +20,15 @@ const removeList = () => {
 }
 
 // Shuffle the lists
+let shuffledNames = ref([...names.value]);
+
 const shuffleLists = () => {
-  for (let i = names.value.length - 1; i > 0; i--) {
+  shuffledNames.value = [...names.value];
+  for (let i = shuffledNames.value.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [names.value[i], names.value[j]] = [names.value[j], names.value[i]];
+    [shuffledNames.value[i], shuffledNames.value[j]] = [shuffledNames.value[j], shuffledNames.value[i]];
   }
-}
+};
 
 // Reset lists
 const restLists = () => {
@@ -79,7 +82,7 @@ const restLists = () => {
         <q-card flat class="text-white bg-dark">
           <q-card-section style="min-height: 300px;">
             <ul class="list-index q-pl-md">
-              <li v-for="(name, index) in names" :key="index" class="list-index-item text-weight-bold">
+              <li v-for="(name, index) in shuffledNames" :key="index" class="list-index-item text-weight-bold">
                 {{ index + 1 }}：{{ name }}
               </li>
             </ul>
