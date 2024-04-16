@@ -14,7 +14,7 @@ useServerSeoMeta({
   <section>
     <div class="sample"></div>
     <a href="#">link</a>
-
+    
   </section>
 </template>
 
