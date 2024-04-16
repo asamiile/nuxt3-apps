@@ -5,9 +5,11 @@
   <q-layout view="hHh lpR fFf">
 
     <!-- Header -->
+    <!-- TODO: ページファイルにbooleanを渡して表示非表示を切り替える -->
     <!-- <Header /> -->
 
     <!-- Main -->
+    <!-- TODO: containerにクラス名を動的に付与する -->
     <q-page-container class="q-px-md">
       <q-page class="q-py-xl">
         <slot />
