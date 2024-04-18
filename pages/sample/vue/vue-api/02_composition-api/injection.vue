@@ -17,6 +17,6 @@ provide('count', count)
 
 <template>
   <div>
-    <sample-inject />
+    <!-- <sample-inject /> -->
   </div>
 </template>
