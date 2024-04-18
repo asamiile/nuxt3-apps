@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 // https://ja.vuejs.org/api/composition-api-setup.html
 const count = ref(0)
 console.log(count.value) // 0

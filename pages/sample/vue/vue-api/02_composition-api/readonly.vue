@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 // https://ja.vuejs.org/api/reactivity-core.html
 
 import { reactive } from 'vue'
