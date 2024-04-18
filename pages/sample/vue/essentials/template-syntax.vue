@@ -7,10 +7,10 @@ const objectOfAttrs = {
 
 <template>
   <section>
-    <div :id="dynamicId"></div>
-    <button :disabled="isButtonDisabled">Button</button>
+    <!-- <div :id="dynamicId"></div>
+    <button :disabled="isButtonDisabled">Button</button> -->
     <div v-bind="objectOfAttrs"></div>
-    <a @click="doSomething">Button</a>
+    <!-- <a @click="doSomething">Button</a> -->
     
   </section>
 </template>
