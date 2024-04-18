@@ -1,6 +1,6 @@
 <script setup>
 import { inject } from 'vue'
-import { countSymbol } from './injectionSymbols'
+// import { countSymbol } from './injectionSymbols'
 
 // デフォルト値なしの静的な値を注入
 const path = inject('path')
