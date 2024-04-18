@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 // https://ja.vuejs.org/api/composition-api-dependency-injection.html
 
 import { ref, provide } from 'vue'
