@@ -1,4 +1,6 @@
 <script setup lang="ts">
+// https://ja.vuejs.org/guide/essentials/template-syntax.html
+
 const objectOfAttrs = {
   id: 'container',
   class: 'wrapper'

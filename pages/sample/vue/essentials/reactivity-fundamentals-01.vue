@@ -1,4 +1,6 @@
 <script setup>
+// https://ja.vuejs.org/guide/essentials/reactivity-fundamentals.html
+
 import { ref } from 'vue'
 
 const count = ref(0)
