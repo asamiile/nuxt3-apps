@@ -33,6 +33,13 @@ const postFontSize = ref(1)
         :title="post.title"
         @enlarge-text="postFontSize += 1"
       ></BlogPost>
+      <!-- 1回だけ呼び出す -->
+      <!-- <BlogPost
+        v-for="post in posts"
+        :key="post.id"
+        :title="post.title"
+        @enlarge-text.once="postFontSize += 1"
+      ></BlogPost> -->
     </div>
     
   </div>
