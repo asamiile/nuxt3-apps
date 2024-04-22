@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: 'sample-class'
+  layout: 'sample-bg-color'
 })
 </script>
 
