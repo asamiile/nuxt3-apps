@@ -1,9 +1,15 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div>
+  <header class="header">
     Component: TheHeader
-  </div>
+  </header>
 </template>
 
-<style scoped></style>
+<style scoped>
+.header {
+  height: 3.75rem;
+  color: #fff;
+  background-color: #333;
+}
+</style>

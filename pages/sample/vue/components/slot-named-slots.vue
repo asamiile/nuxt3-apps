@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: 'sample-base'
+  layout: 'sample-slot'
 })
 </script>
 
