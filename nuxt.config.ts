@@ -1,9 +1,43 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  devServer: {
+    port: 8000,
+  },
+  // runtimeConfig: {
+  //   public: {
+  //       siteUrl: process.env.SITE_URL,
+  //       apiUrl: process.env.API_URL
+  //   },
+  // },
+
+  // https://nuxt.com/docs/guide/going-further/custom-routing#scroll-behavior-for-hash-links
+  // router: {
+  //   options: {
+  //     // smoothにならない
+  //     scrollBehaviorType: 'smooth'
+  //   }
+  // },
+
+  // components: [],
+  // plugins: [],
   modules: [
     'nuxt-quasar-ui'
   ],
+
+  app: {
+    head: {
+      // meta: [
+      //   { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      // ],
+      // script: [
+      //   { src: '/grained.js' }
+      // ],
+      noscript: [
+        { innerHTML: 'This website requires JavaScript.' }
+      ],
+    }
+  }, 
 
   css: [
     '@quasar/extras/fontawesome-v6/fontawesome-v6.css',
@@ -29,4 +63,9 @@ export default defineNuxtConfig({
       }
     },
   },
+  // https://nuxt.com/docs/api/nuxt-config#headnext
+  experimental: {
+    headNext: true,
+  },
+  // https://nuxt.com/docs/api/nuxt-config#restorestate
 })
