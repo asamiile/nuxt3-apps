@@ -22,7 +22,8 @@ export default defineNuxtConfig({
   // components: [],
   // plugins: [],
   modules: [
-    'nuxt-quasar-ui'
+    'nuxt-quasar-ui',
+    '@pinia/nuxt',
   ],
 
   app: {
