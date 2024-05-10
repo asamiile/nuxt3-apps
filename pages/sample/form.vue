@@ -74,10 +74,10 @@
 
 <script>
 import axios from 'axios'
-import BaseInput from "~/components/sample/BaseInput.vue";
-import BaseSelect from "~/components/sample/BaseSelect.vue";
-import BaseCheckbox from "~/components/sample/BaseCheckbox.vue";
-import BaseRadioGroup from "~/components/sample/BaseRadioGroup.vue";
+import BaseInput from "~/components/form/BaseInput.vue";
+import BaseSelect from "~/components/form/BaseSelect.vue";
+import BaseCheckbox from "~/components/form/BaseCheckbox.vue";
+import BaseRadioGroup from "~/components/form/BaseRadioGroup.vue";
 
 export default {
   components: {

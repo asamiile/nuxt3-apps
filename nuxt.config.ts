@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     'nuxt-quasar-ui',
+    '@vee-validate/nuxt',
   ],
 
   css: [
@@ -28,5 +29,15 @@ export default defineNuxtConfig({
         warning: '#F2C037'
       }
     },
+  },
+
+  veeValidate: {
+    // autoImports: true,
+    // componentNames: {
+    //   Form: 'VeeForm',
+    //   Field: 'VeeField',
+    //   FieldArray: 'VeeFieldArray',
+    //   ErrorMessage: 'VeeErrorMessage',
+    // },    
   },
 })

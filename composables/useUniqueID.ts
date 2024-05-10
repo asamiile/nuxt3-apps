@@ -1,7 +1,7 @@
-let UUID = 0
+let UUID: number = 0
 
 export default function useUniqueID () {
-  const getID = () => {
+  const getID = (): number => {
     UUID++
     return UUID
   }
