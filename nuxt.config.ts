@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-quasar-ui',
     '@vee-validate/nuxt',
+    '@vueuse/nuxt',
   ],
 
   css: [
