@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     'nuxt-quasar-ui',
     '@vee-validate/nuxt',
     '@vueuse/nuxt',
+    '@pinia/nuxt',
   ],
 
   css: [
