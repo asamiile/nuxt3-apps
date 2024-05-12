@@ -2,7 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    'nuxt-quasar-ui'
+    'nuxt-quasar-ui',
+    '@vee-validate/nuxt',
+    '@vueuse/nuxt',
+    '@pinia/nuxt',
+    "@nuxt/content"
   ],
 
   css: [
@@ -28,5 +32,15 @@ export default defineNuxtConfig({
         warning: '#F2C037'
       }
     },
+  },
+
+  veeValidate: {
+    // autoImports: true,
+    // componentNames: {
+    //   Form: 'VeeForm',
+    //   Field: 'VeeField',
+    //   FieldArray: 'VeeFieldArray',
+    //   ErrorMessage: 'VeeErrorMessage',
+    // },    
   },
 })

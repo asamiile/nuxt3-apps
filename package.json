@@ -10,13 +10,21 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxt/content": "^2.12.1",
+    "@vueuse/core": "^10.9.0",
+    "@vueuse/nuxt": "^10.9.0",
     "nuxt": "^3.9.0",
     "nuxt-quasar-ui": "^2.0.7",
     "vue": "^3.4.5",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
     "@quasar/extras": "^1.16.9",
-    "quasar": "^2.14.2"
+    "@vee-validate/nuxt": "^4.12.8",
+    "axios": "^1.6.8",
+    "pinia": "^2.1.7",
+    "quasar": "^2.14.2",
+    "yup": "^1.4.0"
   }
 }
