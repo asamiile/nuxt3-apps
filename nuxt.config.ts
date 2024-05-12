@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@vee-validate/nuxt',
     '@vueuse/nuxt',
     '@pinia/nuxt',
+    "@nuxt/content"
   ],
 
   css: [
