@@ -2,11 +2,12 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
+    '@nuxtjs/tailwindcss',
     'nuxt-quasar-ui',
-    '@vee-validate/nuxt',
     '@vueuse/nuxt',
     '@pinia/nuxt',
-    "@nuxt/content"
+    "@nuxt/content",
+    '@vee-validate/nuxt',
   ],
 
   css: [
@@ -41,6 +42,6 @@ export default defineNuxtConfig({
     //   Field: 'VeeField',
     //   FieldArray: 'VeeFieldArray',
     //   ErrorMessage: 'VeeErrorMessage',
-    // },    
+    // },
   },
 })
